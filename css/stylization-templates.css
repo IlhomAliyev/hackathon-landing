@@ -1,0 +1,50 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
+}
+
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #FC6767;
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #EC008C;
+}
+
+*::-moz-selection {
+  background: #FC6767;
+  color: #ffffff;
+}
+
+*::selection {
+  background: #FC6767;
+  color: #ffffff;
+}
+
+*::-moz-selection {
+  background: #FC6767;
+  color: #ffffff;
+}
+
+*::-webkit-selection {
+  background: #FC6767;
+  color: #ffffff;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}/*# sourceMappingURL=stylization-templates.css.map */

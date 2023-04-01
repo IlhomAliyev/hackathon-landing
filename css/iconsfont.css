@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./../fonts/icomoon.eot?92cvnm');
+  src:  url('./../fonts/icomoon.eot?92cvnm#iefix') format('embedded-opentype'),
+    url('./../fonts/icomoon.ttf?92cvnm') format('truetype'),
+    url('./../fonts/icomoon.woff?92cvnm') format('woff'),
+    url('./../fonts/icomoon.svg?92cvnm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram-icon::before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-tehnikum-logo::before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-facebook-icon::before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-telegram-icon::before {
+  content: "\e903";
+  color: #fff;
+}

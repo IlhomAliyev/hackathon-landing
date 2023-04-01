@@ -1,0 +1,59 @@
+$main-gradient: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+
+//! СТИЛИЗАЦИЯ СКРОЛЛБАРА СТРАНИЦЫ
+//? W3C standard (сейчас только для Firefox)
+* {
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+}
+
+//? для Chrome/Edge/Safari
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #FC6767;
+    border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #EC008C;
+}
+
+//!======================================
+//! СТИЛИЗАЦИЯ ВЫДЕЛЕННОГО ТЕКСТА
+*::selection {
+    background: #FC6767;
+    color: #ffffff;
+}
+
+*::-moz-selection {
+    background: #FC6767;
+    color: #ffffff;
+}
+
+*::-webkit-selection {
+    background: #FC6767;
+    color: #ffffff;
+}
+
+//!======================================
+
+//! КЛАСС ДЛЯ БЛОКИРОВКИ ВЫДЕЛЕНИЯ ТЕКСТА
+.no-select {
+    -webkit-touch-callout: none; //? iOS Safari
+    -webkit-user-select: none; //? Safari
+    -khtml-user-select: none; //? Konqueror HTML
+    -moz-user-select: none; //? Old versions of Firefox
+    -ms-user-select: none; //? Internet Explorer/Edge
+    user-select: none; //? Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox
+}
+
+//!======================================

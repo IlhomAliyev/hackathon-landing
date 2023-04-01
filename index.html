@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta name="format-detection" content="telephone=no"> -->
+    <!-- <meta name="format-detection" content="date=no"> -->
+    <!-- <meta name="format-detection" content="address=no"> -->
+    <!-- <meta name="format-detection" content="email=no">  -->
+    <!-- ? мета-теги для iOS Safari (убирают выделения номеров синим цветом) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/iconsfont.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Hackathon 2023</title>
+</head>
+
+<body>
+    <div class="pop-up">
+        <div class="scrollbar-hide">
+            <div class="reg-window">
+                <div class="close-btn"><span></span></div>
+                <h2 class="reg-window__title">Регистрируйся и прими участие в <span class="gradient-text">TEHNIKUM
+                        DIGITAL
+                        HACKATHON 2023</span></h2>
+                <form class="team" action="post">
+                    <div class="member">
+                        <label class="role" for="captain">Капитан команды</label>
+                        <input required id="captain" name="captain" type="text"
+                            placeholder="Имя и Фамилия (Иван Иванов)">
+                        <input required name="captain-group" type="text"
+                            placeholder="Специализация и выпуск (Веб-дизайн, 34)">
+                    </div>
+                    <div class="member">
+                        <label class="role" for="member-2">Участник 2</label>
+                        <input required id="member-2" name="member-2" type="text"
+                            placeholder="Имя и Фамилия (Иван Иванов)">
+                        <input required name="member-2-group" type="text"
+                            placeholder="Специализация и выпуск (Веб-дизайн, 34)">
+                    </div>
+                    <div class="member">
+                        <label class="role" for="member-3">Участник 3</label>
+                        <input required id="member-3" name="member-3" type="text"
+                            placeholder="Имя и Фамилия (Иван Иванов)">
+                        <input required name="member-3-group" type="text"
+                            placeholder="Специализация и выпуск (Веб-дизайн, 34)">
+                    </div>
+                    <div class="member">
+                        <label class="role" for="member-4">Участник 4</label>
+                        <input required id="member-4" name="member-4" type="text"
+                            placeholder="Имя и Фамилия (Иван Иванов)">
+                        <input required name="member-4-group" type="text"
+                            placeholder="Специализация и выпуск (Веб-дизайн, 34)">
+                    </div>
+                    <div class="member">
+                        <label class="role" for="member-5">Участник 5</label>
+                        <input required id="member-5" name="member-5" type="text"
+                            placeholder="Имя и Фамилия (Иван Иванов)">
+                        <input required name="member-5-group" type="text"
+                            placeholder="Специализация и выпуск (Веб-дизайн, 34)">
+                    </div>
+                    <div class="member">
+                        <label class="role" for="member-6">Участник 6</label>
+                        <input required id="member-6" name="member-6" type="text"
+                            placeholder="Имя и Фамилия (Иван Иванов)">
+                        <input required name="member-6-group" type="text"
+                            placeholder="Специализация и выпуск (Веб-дизайн, 34)">
+                    </div>
+                    <div class="reg-btns">
+                        <button type="reset">Очистить</button>
+                        <button type="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="menu-body">
+        <ul class="menu-body-list">
+            <li><a data-goto=".about" href="#" class="menu-body-link list__link">О хакатоне</a></li>
+            <li><a data-goto=".dates" href="#" class="menu-body-link list__link">Даты проведения</a></li>
+            <li><a data-goto=".for-whom" href="#" class="menu-body-link list__link">Для кого</a></li>
+            <li><a data-goto=".task" href="#" class="menu-body-link list__link">Задача</a></li>
+            <li><a data-goto=".jury" href="#" class="menu-body-link list__link">Жюри</a></li>
+        </ul>
+        <div class="contact-box-1">
+            <div class="contact__data">
+                <p class="contact__data-elem">Адрес:</p>
+                <p class="contact__data-value">Ул. Афросиаб 2</p>
+            </div>
+            <div class="contact__data">
+                <p class="contact__data-elem">Телефон:</p>
+                <p class="contact__data-value">+998 78 122-33-55</p>
+            </div>
+            <div class="contact__data">
+                <p class="contact__data-elem">Электронная почта:</p>
+                <p class="contact__data-value">Hl@TEHNIKUM.SCHOOL</p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <a href="#">
+            <span class="tehnikum-logo icon-tehnikum-logo"></span>
+        </a>
+        <ul class="header-list">
+            <li><a data-goto=".about" href="#" class="header-link list__link">О хакатоне</a></li>
+            <li><a data-goto=".dates" href="#" class="header-link list__link">Даты проведения</a></li>
+            <li><a data-goto=".for-whom" href="#" class="header-link list__link">Для кого</a></li>
+            <li><a data-goto=".task" href="#" class="header-link list__link">Задача</a></li>
+            <li><a data-goto=".prizes" href="#" class="header-link list__link">Призы</a></li>
+        </ul>
+        <span id="phone-number">+998 78 122-33-55</span>
+        <div class="menu-btn"><span></span></div>
+    </header>
+    <div class="first-block">
+        <div class="first-block-content">
+            <h1>Tehnikum Digital</h1>
+            <h1 class="gradient-text no-select">Hackathon 2023</h1>
+            <p class="first-block-paragraph">Прими участие в хакатоне, получи возможность выиграть главный приз в
+                размере 10 000 000 UZS и запустить свой проект в реальность.</p>
+            <div class="btn-wrapper">
+                <a href="#" class="btns team-reg">Регистрация команды</a>
+                <a href="#" class="btns dont-have-team">У меня нет команды</a>
+            </div>
+        </div>
+        <img class="no-select bg-1" src="./img/bg1.png" alt="#">
+        <img class="no-select bg-2" src="./img/bg2.png" alt="#">
+        <img class="no-select plastic" src="./img/plastic.png" alt="#">
+        <img class="no-select purple-gradient" src="./img/purple-gradient.png" alt="#">
+        <img class="no-select pink-gradient" src="./img/pink-gradient.png" alt="#">
+    </div>
+    <div class="container">
+        <div class="conditions">
+            <div class="conditions__item">
+                <h4>120</h4>
+                <p>Часов на разработку</p>
+            </div>
+            <div class="conditions__item">
+                <h4>6</h4>
+                <p>Cпециалистов в одной команде</p>
+            </div>
+            <div class="conditions__item">
+                <h4>10</h4>
+                <p>Максимальное количество команд</p>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-item-1">
+                <div class="about__text-wrapper">
+                    <h2 class="highlighted">О хакатоне</h2>
+                    <p>Наш хакатон будет проводиться в гибридном формате, в рамках которого участникам необходимо
+                        объединиться в команды, чтобы совместно создать проект с помощью различных технологий и
+                        инструментов дизайна и разработки.<img id="purple-arrow" src="./img/purple-arrow.svg" alt="#">
+                    </p>
+                </div>
+                <img class="about__image" src="./img/about-image.png" alt="About Image">
+            </div>
+            <div class="about-item-2">
+                <p>Хакатон проходит в течение пяти дней, во время которых мы предоставим вам всю необходимую информацию
+                    и поддержку, чтобы помочь вам создать уникальный проект. А главный приз в размере 10 млн сумов будет
+                    достойной наградой за вашу усердную работу.</p>
+            </div>
+        </div>
+        <div class="dates">
+            <h2>Даты проведения</h2>
+            <div class="dates-wrapper">
+                <div class="date-item date-item-1">
+                    <span class="precise-date">09.04.2023</span>
+                    <span class="date-description">Дата начала хакатона</span>
+                </div>
+                <img class="black-arrow black-arrow-1" src="./img/black-arrow.svg" alt="#">
+                <div class="date-item date-item-2">
+                    <span class="precise-date">14.04.2023</span>
+                    <span class="date-description">Дата окончания хакатона</span>
+                </div>
+                <img class="black-arrow black-arrow-2" src="./img/black-arrow.svg" alt="#">
+                <div class="date-item date-item-3">
+                    <span class="precise-date">16.04.2023</span>
+                    <span class="date-description">Объявление победителей</span>
+                </div>
+            </div>
+        </div>
+        <div class="for-whom">
+            <h2>Для кого проводится <span class="underlined">хакатон</span></h2>
+            <div class="who-box">
+                <div class="who-box-items">
+                    <p>Предстоящий хакатон будет проводиться исключительно для выпускников Tehnikum Coding</p>
+                    <img id="loading-icon" src="./img/loading.svg" alt="#">
+                </div>
+                <div class="who-box-items">
+                    <img id="gamepad-icon" src="./img/gamepad.svg" alt="#">
+                    <h3>Python-разработчики</h3>
+                </div>
+            </div>
+            <div class="who-box">
+                <div class="who-box-items">
+                    <img id="rocket-icon" src="./img/rocket.svg" alt="#">
+                    <h3>Web-дизайнеры</h3>
+                </div>
+                <div class="who-box-items">
+                    <img id="mouse-icon" src="./img/mouse.svg" alt="#">
+                    <h3>Front-end разработчики</h3>
+                </div>
+            </div>
+        </div>
+        <div class="prizes">
+            <div class="prizes__title">
+                <h2>Призы</h2>
+                <img id="prize__arrow" src="./img/black-arrow.svg" alt="#">
+            </div>
+            <div class="medal">
+                <p class="place">1 место</p>
+                <p class="prize__description">Главный приз 10 000 000 UZS</p>
+            </div>
+            <img id="prizes__image" src="./img/image-with-tv.jpeg" alt="#">
+        </div>
+        <div class="task">
+            <h2 class="highlighted">Задача</h2>
+            <div class="task-grid">
+                <p class="task-grid__text task-grid__text-1">
+                    В рамках нашего хакатона вам с командой, состоящей из дизайнеров и разработчиков предстоит
+                    разработать онлайн сервис в области B2B (business to business), о котором более подробно вы узнаете
+                    на оффлайн открытии.
+                </p>
+                <div class="task-grid__photo task-grid__photo-1">
+                    <img src="./img/task-box_image-1.jpeg" alt="Student Photo">
+                </div>
+                <p class="task-grid__text task-grid__text-2">
+                    Пожалуйста убедитесь, что ваша команда полностью сформирована до конца регистрационного периода
+                    (Дата). Она должна включать в себя шесть специалистов, один из которых также будет являться
+                    капитаном команды.
+                </p>
+                <div class="task-grid__photo task-grid__photo-2">
+                    <img src="./img/task-box_image-2.jpeg" alt="Student Photo">
+                </div>
+            </div>
+            <div class="task-grid-2">
+                <p class="important">Важно: регистрацией определенной команды на данном веб-сайте занимается лишь <span
+                        style="color: #7D23F0">капитан.</span></p>
+                <p class="dont-have-team-text">В случае, если же у вас до сих пор нет своей команды, то смело
+                    отправляйтесь в наш Telegram чат, где вы можете как присоединиться уже в сформировавшуюся команду,
+                    так и создать свою.</p>
+                <div class="task-grid__circle-image"><img src="./img/task-box_image-3.jpg" alt="Student Photo"></div>
+            </div>
+            <p class="underlined_purple">Но поторопитесь, количество команд на хакатоне строго ограниченно!</p>
+        </div>
+        <div class="jury">
+            <h2>Члены жюри</h2>
+            <div class="all-juries">
+                <div class="each-jury">
+                    <img class="jury-photo jury-photo-1" src="./img/yuriy-kagramaryan.png" alt="Юрий Каграмарян">
+                    <h3 class="jury-name">Юрий Каграмарян</h3>
+                    <p class="jury-work">Front-end разработка</p>
+                </div>
+                <div class="each-jury">
+                    <img class="jury-photo jury-photo-2" src="./img/jasur-askarov.png" alt="Жасур Аскаров">
+                    <h3 class="jury-name">Жасур Аскаров</h3>
+                    <p class="jury-work">Web-дизайн</p>
+                </div>
+                <div class="each-jury">
+                    <img class="jury-photo jury-photo-3" src="./img/javlon-zakirov.jpg" alt="Жавлон Закиров">
+                    <h3 class="jury-name">Жавлон Закиров</h3>
+                    <p class="jury-work">Python разработка</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="registration">
+        <h2 class="registration-title">Регистрируйся на <span class="gradient-text">TEHNIKUM DIGITAL HACKATHON
+                2023</span></h2>
+        <p class="registration-paragraph">Чтобы принять участие в хакатоне, заполните форму, вписав всех участников.
+            Если вы ещё не состоите в команде или хотите ее сформировать, нажмите на кнопку «у меня нет команды»</p>
+        <div class="btn-wrapper">
+            <a href="#" class="btns team-reg">Регистрация команды</a>
+            <a href="#" class="btns dont-have-team">У меня нет команды</a>
+        </div>
+        <img src="./img/bg3.png" alt="#" class="no-select bg-3 bg-3_top">
+        <img src="./img/bg3.png" alt="#" class="no-select bg-3 bg-3_bottom">
+        <img src="./img/plastic.png" alt="#" class="no-select plastic">
+        <img class="no-select purple-gradient" src="./img/purple-gradient.png" alt="#">
+        <img class="no-select pink-gradient" src="./img/pink-gradient.png" alt="#">
+    </div>
+    <footer>
+        <div class="contact-box-1">
+            <div class="contact__data">
+                <p class="contact__data-elem">Адрес:</p>
+                <p class="contact__data-value">Ул. Афросиаб 2</p>
+            </div>
+            <div class="contact__data">
+                <p class="contact__data-elem">Телефон:</p>
+                <p class="contact__data-value">+998 78 122-33-55</p>
+            </div>
+            <div class="contact__data">
+                <p class="contact__data-elem">Электронная почта:</p>
+                <p class="contact__data-value">Hl@TEHNIKUM.SCHOOL</p>
+            </div>
+        </div>
+        <div class="footer-box-2">
+            <div class="link-to-tehnikum">
+                <a href="#">
+                    <span class="tehnikum-logo icon-tehnikum-logo"></span>
+                </a>
+            </div>
+            <ul class="footer-list">
+                <li><a data-goto=".about" href="#" class="footer-link list__link">О хакатоне</a></li>
+                <li><a data-goto=".for-whom" href="#" class="footer-link list__link">Для кого хакатон</a></li>
+                <li><a data-goto=".task" href="#" class="footer-link list__link">Задача</a></li>
+                <li><a data-goto=".prizes" href="#" class="footer-link list__link">Призы</a></li>
+                <li><a data-goto=".jury" href="#" class="footer-link list__link">Состав жюри</a></li>
+            </ul>
+            <div class="social-block">
+                <p class="social-title">Мы в соц сетях:</p>
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.instagram.com">
+                            <span class="social-icon icon-instagram-icon"></span>
+                            <p class="social-name">Instagram</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com">
+                            <span class="social-icon icon-facebook-icon"></span>
+                            <p class="social-name">Facebook</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/c/1582795403/561">
+                            <span class="social-icon icon-telegram-icon"></span>
+                            <p class="social-name">Telegram</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
