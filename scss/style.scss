@@ -21,6 +21,7 @@
 }
 
 $main-gradient: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+$secondary-gradient: linear-gradient(90deg, #709C9D 0%, #81B9C0 100%);
 // !==================================
 
 // !========REGISTRATION-WINDOW (beginning)========
@@ -781,6 +782,11 @@ header {
                 margin-bottom: calcFluidSizeWidth(50, 88, 360, 1440);
             }
 
+            h2.highlighted::after {
+                left: -60px;
+                top: -15px;
+            }
+
             p {
                 position: relative;
             }
@@ -801,6 +807,7 @@ header {
             height: calcFluidSizeWidth(262, 390, 360, 1440);
             border-radius: 250px 20px 20px 20px;
             object-fit: cover;
+            background: $secondary-gradient;
         }
     }
 
@@ -1068,6 +1075,7 @@ header {
         width: calcFluidSizeWidth(320, 482, 360, 1440);
         border-radius: 150px 16px 16px 150px;
         object-fit: cover;
+        background: $secondary-gradient;
     }
 }
 
@@ -1124,8 +1132,9 @@ header {
 
             img {
                 width: 100%;
-                margin-left: 40px;
+                // margin-left: 40px;
                 transform: rotate(-45deg) scale(1.4);
+                background: $secondary-gradient;
             }
         }
 
@@ -1189,6 +1198,7 @@ header {
                 margin-bottom: 10px;
                 object-fit: cover;
                 object-position: center bottom;
+                background: $secondary-gradient;
             }
         }
     }
@@ -1288,6 +1298,7 @@ header {
                 width: calcFluidSizeWidth(210, 305, 360, 1440);
                 border-radius: 50%;
                 object-fit: cover;
+                background: $main-gradient;
             }
 
             .jury-photo-1 {

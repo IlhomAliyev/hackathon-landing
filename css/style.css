@@ -771,6 +771,10 @@ header .menu-btn._active::after {
 .about .about-item-1 .about__text-wrapper h2 {
   margin-bottom: calc(0.0351851852 * 100vw + 37.3333333333px);
 }
+.about .about-item-1 .about__text-wrapper h2.highlighted::after {
+  left: -60px;
+  top: -15px;
+}
 .about .about-item-1 .about__text-wrapper p {
   position: relative;
 }
@@ -788,6 +792,7 @@ header .menu-btn._active::after {
   border-radius: 250px 20px 20px 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  background: linear-gradient(90deg, #709C9D 0%, #81B9C0 100%);
 }
 .about .about-item-2 {
   display: flex;
@@ -994,6 +999,7 @@ header .menu-btn._active::after {
   border-radius: 150px 16px 16px 150px;
   -o-object-fit: cover;
      object-fit: cover;
+  background: linear-gradient(90deg, #709C9D 0%, #81B9C0 100%);
 }
 
 @media (max-width: 950px) {
@@ -1041,8 +1047,8 @@ header .menu-btn._active::after {
 }
 .task .task-grid__photo img {
   width: 100%;
-  margin-left: 40px;
   transform: rotate(-45deg) scale(1.4);
+  background: linear-gradient(90deg, #709C9D 0%, #81B9C0 100%);
 }
 .task .task-grid__text-1 {
   grid-column: 1/3;
@@ -1098,6 +1104,7 @@ header .menu-btn._active::after {
      object-fit: cover;
   -o-object-position: center bottom;
      object-position: center bottom;
+  background: linear-gradient(90deg, #709C9D 0%, #81B9C0 100%);
 }
 .task .underlined_purple {
   position: relative;
@@ -1178,6 +1185,7 @@ header .menu-btn._active::after {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
 }
 .jury .all-juries .each-jury .jury-photo-1 {
   -o-object-position: center bottom;
