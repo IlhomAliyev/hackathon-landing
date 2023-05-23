@@ -1,0 +1,68 @@
+// ! ========JURY (beginning)========
+.jury {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    align-self: flex-start;
+    margin-bottom: calcFluidSizeWidth(40, 90, 360, 1440);
+  }
+
+  .all-juries {
+    margin: 0 0 calcFluidSizeWidth(60, 148, 360, 1440);
+    display: inline-flex;
+    gap: calcFluidSizeWidth(35, 70, 360, 1440);
+    justify-content: center;
+
+    .each-jury {
+      flex: 0 1 33.333%;
+
+      .jury-photo {
+        display: block;
+        margin: 0 auto calcFluidSizeWidth(14, 48, 360, 1440);
+        height: calcFluidSizeWidth(210, 305, 360, 1440);
+        width: calcFluidSizeWidth(210, 305, 360, 1440);
+        border-radius: 50%;
+        object-fit: cover;
+        background: $main-gradient;
+      }
+
+      .jury-photo-1 {
+        object-position: center bottom;
+      }
+
+      .jury-photo-2 {
+        object-position: center 80%;
+      }
+
+      .jury-name {
+        font-family: 'TT Hoves';
+        font-weight: 500;
+        font-size: calcFluidSizeWidth(20, 32, 360, 1440);
+        line-height: 119%;
+        text-align: center;
+        color: #121212;
+        margin-bottom: calcFluidSizeWidth(0, 8, 360, 1440);
+      }
+
+      .jury-work {
+        font-family: 'TT Hoves';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 117%;
+        text-align: center;
+        color: #828282;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .jury {
+    .all-juries {
+      flex-wrap: wrap;
+    }
+  }
+}
+// ! ========JURY (ending)========

@@ -1,0 +1,401 @@
+@import './null-style.scss';
+@import './stylization-templates.scss';
+
+@import './functions-vars.scss';
+
+@import './reg-window.scss';
+@import './first-block.scss';
+@import './conditions.scss';
+@import './about.scss';
+@import './dates.scss';
+@import './for-whom.scss';
+@import './prizes.scss';
+@import './task.scss';
+@import './jury.scss';
+@import './registration.scss';
+@import './footer.scss';
+
+body {
+  background-color: black;
+  font-family: 'TT Hoves';
+  min-width: 350px;
+
+  &::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+}
+
+body._lock {
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    display: block;
+    background: rgba(29, 29, 29, 0.8);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.gradient-text {
+  display: inline;
+  background: $main-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlighted {
+  z-index: 1;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url('./../img/highlight.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: calcFluidSizeWidth(212, 302, 360, 1440);
+    height: calcFluidSizeWidth(60, 91, 360, 1440);
+    left: -10px;
+    top: -15px;
+    z-index: -1;
+  }
+}
+
+.underlined {
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url('./../img/underline.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: calcFluidSizeWidth(180, 240, 360, 1440);
+    height: 22px;
+    right: -30px;
+    bottom: -30px;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  gap: 24px;
+
+  .btns {
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 0 24px;
+    display: block;
+    width: 236px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 50px;
+    background-color: #fcfdf9;
+    text-align: center;
+    color: #050505;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+
+  .team-reg {
+    background: $main-gradient;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px calcFluidSizeWidth(20, 120, 360, 1440);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+
+  &._active {
+    width: 80%;
+    backdrop-filter: blur(3px);
+  }
+
+  &._scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+  }
+
+  .tehnikum-logo {
+    font-size: calcFluidSizeWidth(16, 24, 360, 1440);
+    color: white;
+
+    &:hover {
+      display: inline;
+      background: $main-gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .header-list {
+    display: none;
+    align-items: center;
+    column-gap: calcFluidSizeWidth(0, 48, 360, 1440);
+
+    &._visible {
+      display: flex;
+    }
+
+    .header-link {
+      white-space: nowrap;
+      color: #fcfdf9;
+      font-family: 'TT Hoves';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 117%;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #phone-number {
+    display: none;
+    white-space: nowrap;
+    font-family: 'TT Hoves';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    color: #f6f6f6;
+    transition: 0.5s;
+
+    &:hover {
+      display: inline;
+      background: $main-gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &._visible {
+      display: inline;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+    cursor: pointer;
+    width: 26px;
+    height: 14px;
+    position: relative;
+    transition: 0.3s;
+
+    &._visible {
+      display: block;
+    }
+
+    span,
+    &::before,
+    &::after {
+      content: '';
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+      border-radius: 50px;
+      position: absolute;
+      left: 0;
+      transition: 0.3s;
+    }
+
+    span {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &:hover {
+      span,
+      &::before,
+      &::after {
+        background: $main-gradient;
+      }
+    }
+
+    &._active span {
+      transform: scale(0) translate(0px, -50%);
+    }
+
+    &._active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    &._active::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+    }
+  }
+}
+
+.menu-body {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  backdrop-filter: blur(3px);
+  z-index: 10;
+  padding: 150px calcFluidSizeWidth(20, 120, 360, 1440) 50px;
+  transition: 0.5s;
+
+  &._active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  .menu-body-list {
+    margin-bottom: 80px;
+
+    li {
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .menu-body-link {
+      display: block;
+      font-family: 'TT Hoves';
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 117%;
+      color: #fcfdf9;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .contact-box-1 {
+    flex-direction: column;
+    row-gap: 48px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    &._active {
+      width: 100%;
+    }
+  }
+
+  .menu-body {
+    width: 100%;
+  }
+}
+
+// ! ========BACKGROUND========
+
+.bg-1 {
+  width: calcFluidSizeWidth(206, 356, 360, 1440);
+  position: absolute;
+  top: calcFluidSizeWidth(-87, 50, 360, 1440);
+  left: calcFluidSizeWidth(-103, -115, 360, 1440);
+  z-index: -3;
+}
+
+.bg-2 {
+  width: calcFluidSizeWidth(439, 726, 360, 1440);
+  position: absolute;
+  top: calcFluidSizeWidth(121, 127, 360, 1440);
+  left: calcFluidSizeWidth(103, 829, 360, 1440);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: -3;
+}
+
+.plastic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.purple-gradient {
+  position: absolute;
+  left: -500px;
+  bottom: -450px;
+  z-index: -4;
+  width: 1100px;
+  object-fit: cover;
+}
+
+.pink-gradient {
+  position: absolute;
+  right: -450px;
+  top: -370px;
+  z-index: -4;
+  width: 1000px;
+  object-fit: cover;
+}
+
+// ! ========BACKGROUND========
+
+.container {
+  padding: 0 calcFluidSizeWidth(20, 120, 360, 1440);
+  background-color: white;
+}

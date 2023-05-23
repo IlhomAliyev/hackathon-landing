@@ -1,0 +1,88 @@
+// ! ========DATES (beginning)========
+.dates {
+  margin-bottom: calcFluidSizeWidth(60, 148, 360, 1440);
+
+  h2 {
+    margin-bottom: calcFluidSizeWidth(50, 88, 360, 1440);
+  }
+
+  .dates-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: calcFluidSizeWidth(-75, 75, 360, 1440);
+
+    .date-item {
+      flex: 0 0 calcFluidSizeWidth(154, 230, 360, 1440);
+      border: 1px solid #050505;
+      border-radius: 50%;
+      height: calcFluidSizeWidth(154, 230, 360, 1440);
+      padding: 10px;
+
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      color: #050505;
+
+      &-3 {
+        background-color: #050505;
+        border: 0;
+        color: #fcfdf9;
+      }
+
+      .precise-date {
+        font-family: 'Gilroy';
+        font-weight: 600;
+        font-size: calcFluidSizeWidth(20, 30, 360, 1440);
+        line-height: 123%;
+        margin-bottom: 8px;
+      }
+
+      .date-description {
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: calcFluidSizeWidth(16, 20, 360, 1440);
+        line-height: 115%;
+      }
+    }
+
+    .black-arrow {
+      width: calcFluidSizeWidth(30, 72, 360, 1440);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .dates {
+    .dates-wrapper {
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .date-item {
+        width: calcFluidSizeWidth(154, 230, 360, 1440);
+
+        &-1,
+        &-3 {
+          margin-right: calcFluidSizeWidth(150, 400, 360, 1440);
+        }
+
+        &-2 {
+          margin-left: calcFluidSizeWidth(150, 400, 360, 1440);
+        }
+      }
+
+      .black-arrow {
+        &-1 {
+          transform: rotate(40deg);
+        }
+
+        &-2 {
+          transform: rotate(135deg);
+        }
+      }
+    }
+  }
+}
+// ! ========DATES (ending)========
