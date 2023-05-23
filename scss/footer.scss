@@ -1,0 +1,187 @@
+// ! ========FOOTER (beginning)========
+
+.contact-box-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: calcFluidSizeWidth(40, 64, 360, 1440);
+
+  .contact__data {
+    flex: 0 1 33.333%;
+
+    .contact__data-elem {
+      font-family: 'TT Hoves';
+      font-weight: 500;
+      font-size: calcFluidSizeWidth(16, 20, 360, 1440);
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #6a6a6a;
+      margin-bottom: 8px;
+    }
+
+    .contact__data-value {
+      font-family: 'TT Hoves';
+      font-weight: 400;
+      font-size: calcFluidSizeWidth(20, 28, 360, 1440);
+      line-height: 118%;
+      color: #f6f6f6;
+    }
+  }
+}
+
+footer {
+  padding: calcFluidSizeWidth(38, 48, 360, 1440)
+    calcFluidSizeWidth(20, 120, 360, 1440) calcFluidSizeWidth(48, 92, 360, 1440);
+  background-color: #121212;
+  color: #f6f6f6;
+
+  .footer-box-2 {
+    display: flex;
+    justify-content: space-between;
+
+    .link-to-tehnikum {
+      flex: 0 1 33.333%;
+      order: 1;
+
+      .tehnikum-logo {
+        font-size: calcFluidSizeWidth(24, 32, 360, 1440);
+        color: white;
+        transition: 0.5s;
+
+        &:hover {
+          display: inline;
+          background: $main-gradient;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    .footer-list {
+      flex: 0 1 33.333%;
+      order: 2;
+
+      li {
+        font-family: 'TT Hoves';
+        font-weight: 400;
+        font-size: calcFluidSizeWidth(16, 24, 360, 1440);
+        line-height: 117%;
+        margin-bottom: calcFluidSizeWidth(15, 32, 360, 1440);
+
+        &:last-child {
+          margin: 0;
+        }
+
+        .footer-link {
+          white-space: nowrap;
+          color: #f6f6f6;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .social-block {
+      flex: 0 1 33.333%;
+      order: 3;
+
+      .social-title {
+        white-space: nowrap;
+        font-family: 'TT Hoves';
+        font-weight: 500;
+        font-size: calcFluidSizeWidth(16, 20, 360, 1440);
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #6a6a6a;
+        margin-bottom: calcFluidSizeWidth(20, 40, 360, 1440);
+      }
+
+      .social-list {
+        flex: 0 1 33.333%;
+
+        li {
+          margin-bottom: calcFluidSizeWidth(15, 32, 360, 1440);
+
+          &:last-child {
+            margin: 0;
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+
+            .social-icon {
+              font-size: calcFluidSizeWidth(20, 40, 360, 1440);
+              line-height: 1;
+              color: #f6f6f6;
+              transition: 0.3s;
+            }
+
+            .social-name {
+              font-family: 'TT Hoves';
+              font-weight: 400;
+              font-size: calcFluidSizeWidth(16, 24, 360, 1440);
+              line-height: 117%;
+              color: #f6f6f6;
+              transition: 0.3s;
+            }
+
+            &:hover {
+              .social-icon,
+              .social-name {
+                display: inline;
+                background: $main-gradient;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  footer {
+    .contact-box-1 {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    .footer-box-2 {
+      .link-to-tehnikum {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  footer {
+    .footer-box-2 {
+      flex-wrap: wrap;
+      row-gap: 40px;
+
+      .link-to-tehnikum {
+        order: 3;
+      }
+
+      .footer-list {
+        order: 1;
+      }
+
+      .social-block {
+        order: 2;
+      }
+    }
+  }
+}
+
+// ! ========FOOTER (ending)========

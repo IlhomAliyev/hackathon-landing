@@ -1,0 +1,45 @@
+//! ФУНКЦИЯ АДАПТИВНОГО РАЗМЕРА
+@function calcFluidSizeWidth($s-min, $s-max, $v-min, $v-max) {
+  $k: ($s-max - $s-min)/ ($v-max - $v-min);
+  $b: $s-min - $k * $v-min;
+
+  $b: $b * 1px;
+
+  @return calc(#{$k} * 100vw + #{$b});
+}
+
+@function calcFluidSizeHeight($s-min, $s-max, $v-min, $v-max) {
+  $k: ($s-max - $s-min)/ ($v-max - $v-min);
+  $b: $s-min - $k * $v-min;
+
+  $b: $b * 1px;
+
+  @return calc(#{$k} * 100vh + #{$b});
+}
+
+$main-gradient: linear-gradient(90deg, #ec008c 0%, #fc6767 100%);
+$secondary-gradient: linear-gradient(90deg, #709c9d 0%, #81b9c0 100%);
+// !==================================
+
+h1 {
+  color: #fcfdf9;
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: calcFluidSizeWidth(36, 64, 360, 1440);
+}
+
+h2 {
+  color: #050505;
+  font-family: 'TT Hoves';
+  font-weight: 500;
+  font-size: calcFluidSizeWidth(32, 48, 360, 1440);
+  line-height: 119%;
+}
+
+p {
+  font-family: 'TT Hoves';
+  font-weight: 400;
+  font-size: calcFluidSizeWidth(16, 32, 360, 1440);
+  line-height: 140%; //! в мобилке 119%
+  color: #121212;
+}
